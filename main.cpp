@@ -59,7 +59,6 @@ int main() {
         stackData.push(WNBAStats);
         queueData.push(WNBAStats);
         priorityQueue.push(WNBAStats);
-
     }
 
      //printing into all output files

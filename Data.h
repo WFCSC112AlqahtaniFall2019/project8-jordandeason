@@ -18,7 +18,7 @@ public:
     double MINnum;//num of minutes played
     friend ostream &operator<<(ostream &os, const Data &d);
 
-    bool operator<(const Data &rhs);
+    bool operator<(const Data &rhs) const;
 
     Data(double a = 0.0, double s = 0.0, double p = 0.0, double m = 0.0);
 };

@@ -13,7 +13,7 @@ Data::Data(double a, double s, double p, double m) {//constructor
     MINnum = m;
 }
 
-bool Data::operator<(const Data &rhs) {//overload the comparison operator
+bool Data::operator<(const Data &rhs) const {//overload the comparison operator
     if (MINnum < rhs.MINnum) {
         return true;
     } else {
@@ -21,7 +21,7 @@ bool Data::operator<(const Data &rhs) {//overload the comparison operator
     }
 }
 
-ostream &operator<<(ostream &os, const Data &d) {//overload the output stream
+ostream &operator<<(ostream &os,const Data &d)  {//overload the output stream
     return os << d.ASTnum << " " << d.STLnum << " " << d.PTSnum << " " << d.MINnum << endl;
 }
 
